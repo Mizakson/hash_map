@@ -107,7 +107,11 @@ class HashMap {
         let arr = []
 
         for (let i = 0; i < this.map.length; i++) {
-            if (this.map[i] !== undefined) arr.push(this.map[i])
+            
+            if (this.map[i] !== undefined) {
+                let nodeArr = [this.map[i].key, this.map[i].value]
+                arr.push(nodeArr)
+            }
         }
 
         return arr
@@ -137,4 +141,4 @@ hm.set("Jack","In a box")
 // console.log(hm.length()) 3
 // console.log(hm.keys()) ["Max", "Wolfie", "Jack"]
 // console.log(hm.values()) ["Programmer", "Owns a house", "In a box"]
-// console.log(hm.entries()) [Node {key: ... value: ...}, Node {key: ... value: ...}, Node {key: ... value: ...}]
+console.log(hm.entries())
