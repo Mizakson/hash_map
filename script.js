@@ -141,4 +141,4 @@ hm.set("Jack","In a box")
 // console.log(hm.length()) 3
 // console.log(hm.keys()) ["Max", "Wolfie", "Jack"]
 // console.log(hm.values()) ["Programmer", "Owns a house", "In a box"]
-console.log(hm.entries())
+// console.log(hm.entries()) [["Max", "Programmer"], ["Wolfie", "Owns a house"]] etc...
